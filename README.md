@@ -64,8 +64,19 @@ project-directory/
    ```
 
 3. **Configure Environment Variables**:
-   - Create a `.env` file in the root directory.
-   - Add necessary environment variables, such as API keys and database connection strings.
+   - Create a `.env` file in the root directory with following variables:
+   ```env
+   LANGCHAIN_API_KEY = <your-lanchain-api-key>
+   GROQ_API_KEY = <your-grok-api-key>
+   LANGCHAIN_PROJECT = <your-langchain-project-name>
+   LANGCHAIN_TRACING_V2 = true
+
+   # MySQL connection details
+   MYSQL_USERNAME = <your-username>
+   MYSQL_PASSWORD = <your-password>
+   MYSQL_HOST = <your-host>
+   MYSQL_DATABASE = <your-database>
+   ```
 
 4. **Initialize the Database**:
    - Ensure that the `chroma_db/` directory exists for ChromaDB persistence.
